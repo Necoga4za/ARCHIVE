@@ -2065,9 +2065,8 @@ body {
 
 .frame .section0{
     position: relative;
-    width: 1920px;
-    height: 1080px;
-    
+    width: 100%; 
+    height: 100vh; 
     font-family: 'gotham', sans-serif; 
     background-color: #F6F6F6; 
     color: #000000;
@@ -2076,10 +2075,7 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    min-height: 100vh;
-
     cursor: none;
-
 }
 
         #custom-cursor {
@@ -2172,6 +2168,7 @@ header {
     display: flex; 
     gap: 16vw; 
     align-items: flex-start;
+    min-width: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2188,11 +2185,13 @@ header {
     perspective: 41.67vw; 
     perspective-origin: center center;
     overflow: hidden;
-    height: fit-content;
+    height: auto; 
+    min-width: 0;
     flex-shrink: 1; 
     max-width: 50%; 
     width: 50%; 
 }
+
 
 .kodak img {
     padding-top: 5.21vw;

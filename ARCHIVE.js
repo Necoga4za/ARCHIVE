@@ -769,10 +769,9 @@ const filmBoxSides = document.querySelector('.film-box-sides');
 const filmBoxMiddle = document.querySelector('.film-box-middle');
 const middleLines = filmBoxMiddle ? filmBoxMiddle.querySelectorAll('.middle-line') : [];
 
-const CANVAS_WIDTH = 285;
-const CANVAS_HEIGHT = 636;
-canvas.width = CANVAS_WIDTH;
-canvas.height = CANVAS_HEIGHT;
+
+let CANVAS_WIDTH = 285;
+let CANVAS_HEIGHT = 636;
 
 let targetX = CANVAS_WIDTH / 2;
 let targetY = CANVAS_HEIGHT / 2;
@@ -782,14 +781,52 @@ let currentY = targetY;
 
 const easing = 0.2;
 
+
 const points = [
     { x: 0, y: 0 },
-    { x: CANVAS_WIDTH, y: 0 },
-    { x: CANVAS_WIDTH, y: CANVAS_HEIGHT, targetY: CANVAS_HEIGHT, currentY: CANVAS_HEIGHT },
-    { x: 0, y: CANVAS_HEIGHT, targetY: CANVAS_HEIGHT, currentY: CANVAS_HEIGHT },
+    { x: 0, y: 0 }, 
+    { x: 0, y: 0, targetY: 0, currentY: 0 },
+    { x: 0, y: 0, targetY: 0, currentY: 0 },
 ];
 
+
+function updateCanvasDimensions() {
+
+    const displayWidth = canvas.clientWidth;
+    const displayHeight = canvas.clientHeight;
+
+    if (canvas.width !== displayWidth || canvas.height !== displayHeight) {
+        
+        
+        canvas.width = displayWidth;
+        canvas.height = displayHeight;
+        
+        CANVAS_WIDTH = displayWidth;
+        CANVAS_HEIGHT = displayHeight;
+
+        targetX = CANVAS_WIDTH / 2;
+        targetY = CANVAS_HEIGHT / 2;
+        currentX = targetX;
+        currentY = targetY;
+
+        points[1].x = CANVAS_WIDTH;
+        points[2].x = CANVAS_WIDTH;
+        points[2].y = CANVAS_HEIGHT;
+        points[2].targetY = CANVAS_HEIGHT;
+        points[2].currentY = CANVAS_HEIGHT;
+        points[3].y = CANVAS_HEIGHT;
+        points[3].targetY = CANVAS_HEIGHT;
+        points[3].currentY = CANVAS_HEIGHT;
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', updateCanvasDimensions);
+window.addEventListener('resize', updateCanvasDimensions);
+
+
 canvas.addEventListener('mousemove', (e) => {
+   
     targetX = e.offsetX;
     targetY = e.offsetY;
 });

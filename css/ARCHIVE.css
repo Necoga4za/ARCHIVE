@@ -1,0 +1,2608 @@
+﻿@import url("https://use.typekit.net/zhp2icn.css");
+
+.frame {
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+    width: 100%; 
+    min-width: 320px;
+    position: relative;
+}
+
+body {
+    margin: 0%;
+}
+
+@media screen and (min-width: 1920px) {
+    .frame {
+        width: 1920px !important; 
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+        left: auto !important; 
+        transform: none !important; 
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* Section 1  */
+/* -------------------------------------------------------------------------- */
+.frame .section1 { 
+    position: absolute;
+    top: 1080px; /* 🚨 0px -> 1080px (SECTION_ZERO_HEIGHT에 맞춰 수정) */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+}
+.frame .scroll-spacer {
+    height: 1380px !important; 
+    width: 100%;
+}
+
+.frame .SUYEON-ARCHIVE {
+    position: absolute;
+    opacity: 0;
+    top: 0.68vw; 
+    left: 5.21vw; 
+    font-family: "gotham", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #d40f10;
+    font-size: 7.71vw; 
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+    z-index: 99;
+}
+
+.frame .SUYEON-ARCHIVE .register-symbol {
+    font-size: 15vw; 
+    vertical-align: top;
+    line-height: 1.05;
+}
+
+/* body.scrolled .SUYEON-ARCHIVE {
+    transform: translateY(-100%);
+    opacity: 0;
+} */
+
+.frame .text-wrapper {
+    position: absolute;
+    opacity: 0; 
+    top: 10.42vw; 
+    left: 34.84vw; 
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1b1b1b; 
+    font-size: 1.56vw; 
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    transition: color 0.3s ease-out; 
+    z-index: 99;
+}
+
+
+.frame .img {
+    position: absolute; 
+    top: 9.375vw; 
+    left: 0; 
+    width: 100vw; 
+    height: 44.375vw; 
+    clip-path: inset(12.97vw 41.7vw 8.85vw 42.21vw); 
+    transition: clip-path 0.6s ease-out;
+    z-index: 10;
+}
+
+.frame .img.scale-1 {
+    clip-path: inset(9.73vw 30.37vw 9.73vw 30.37vw); 
+}
+
+.frame .img.scale-2 {
+    clip-path: inset(6.48vw 20.24vw 6.48vw 20.24vw);
+}
+
+.frame .img.scale-3 {
+    clip-path: inset(3.24vw 10.12vw 3.24vw 10.12vw);
+}
+
+.frame .img.scale-4 {
+    clip-path: inset(0 0 0 0);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .frame .section1 {
+        position: relative; 
+        height: 600px; 
+    }
+
+    .frame .SUYEON-ARCHIVE {
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10vw; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .frame .text-wrapper {
+        position: relative;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3vw;
+        width: 90%;
+        text-align: center;
+    }
+
+    .frame .img {
+        position: relative;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: auto;
+        clip-path: inset(0 0 0 0) !important; 
+        object-fit: contain;
+    }
+
+    .frame .img.scale-1,
+    .frame .img.scale-2,
+    .frame .img.scale-3,
+    .frame .img.scale-4 {
+        clip-path: inset(0 0 0 0) !important; 
+    }
+
+    .frame .KIMSUYEON-4, .frame .element-4, .frame .element-5, 
+    .frame .KIMSUYEON-5, .frame .FILM-3, .frame .KIMSUYEON-6, 
+    .frame .element-6, .frame .element-7, .frame .KIMSUYEON-7, .frame .FILM-4 {
+        display: none;
+    }
+}
+
+/*section2*/
+
+/* -------------------------------------------------------------------------- */
+/* Section 2  */
+/* -------------------------------------------------------------------------- */
+.section2 {
+    position: relative; 
+    height: auto; 
+    min-height: auto; 
+    
+    margin-bottom: 2000px; 
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Section 2 내부 텍스트  */
+/* -------------------------------------------------------------------------- */
+.section2 .dis,
+.section2 .travel-for-me,
+.section2 .youth-is-a-journey {
+    position: absolute;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+    opacity: 0 !important;
+    transform: translateY(20px);
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.section2 .dis.is-visible,
+.section2 .travel-for-me.is-visible,
+.section2 .youth-is-a-journey.is-visible {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+.section2 .dis.is-visible { transition-delay: 0s; }
+.section2 .travel-for-me.is-visible { transition-delay: 0.2s; }
+.section2 .youth-is-a-journey.is-visible { transition-delay: 0.4s; }
+
+
+.section2 .dis {
+    top: 10px; 
+    left: calc(50% - 622px); 
+    width: 1245px;
+    font-family: "gotham", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #d40f0fee;
+    font-size: 64px;
+}
+
+.section2 .travel-for-me {
+    top: calc(10px + 367px); 
+    left: calc(50% - 392px);
+    width: 785px;
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B1B1B;
+    font-size: 24px;
+}
+
+.section2 .youth-is-a-journey {
+    top: calc(10px + 367px + 334px);
+    left: calc(50% - 392px);
+    font-family: "gotham", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #b60e0eee;
+    font-size: 32px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    
+    .section2 .dis, .section2 .travel-for-me, .section2 .youth-is-a-journey {
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none; 
+        margin: 40px auto 0; 
+        width: 90%;
+        text-align: center;
+    }
+    
+    .section2 .dis {
+        font-size: 6vw;
+        line-height: 1.4;
+        margin-top: 80px; 
+    }
+
+    .section2 .travel-for-me {
+        font-size: 1.1rem;
+        margin-top: 20px;
+        line-height: 1.6;
+    }
+
+    .section2 .youth-is-a-journey {
+        font-size: 1.3rem;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .section2 {
+        margin-top: 50px; 
+        min-height: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+/*/////////section3////////////*/
+
+.frame .section3 {
+    position: absolute; /* 🚨 fixed -> absolute로 변경 (핵심) */
+    top: 3500px;        /* 🚨 JS SCROLL_START_S3와 일치 (핵심) */
+    /* margin-top: 1000px; <--- 이 줄은 제거하거나 주석 처리해야 합니다. */
+    width: 100%; 
+    height: 62.5vw; 
+    left: 0;
+    transform: translateX(0); 
+}
+
+.frame .section3-wrapper {
+    width: 208.33vw; 
+    height: 100%;
+    left: 0; 
+    position: relative; 
+}
+
+.frame .italy-background {
+    background-color: #1B1B1B;
+    position: absolute; 
+    width: 208.33vw;
+    height: 47.81vw; 
+    top: 0px; 
+    left: 0;
+}
+
+.frame .italy-1, .frame .italy-2, .frame .italy-3 {
+    position: absolute;
+    top: 3.9vw; 
+    width: 59.9vw;
+    height: 40vw;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.frame .italy-1 { 
+    left: -21.72vw; 
+}
+
+.frame .italy-2 { 
+    left: calc(-21.72vw + 59.9vw + 3.54vw); 
+}
+
+.frame .italy-3 { 
+    left: calc(41.72vw + 59.9vw + 3.53vw); 
+}
+
+        .frame .film-line4 {
+            position: absolute;
+            left: 0;
+            width: 4000px;
+        }
+
+        .frame .KIMSUYEON { position: absolute; top: 20px; left: 502px; }
+        .frame .element { position: absolute; top: 20px; left: 1000px; }
+        .frame .element-2 { position: absolute; top: 20px; left: 1810px; }
+        .frame .KIMSUYEON-m { position: absolute; top: 20px; left: 1314px; }
+        .frame .FILM { position: absolute; top: 20px; left: 63px; }
+
+        .frame .KIMSUYEON-2 { position: absolute; top: 862px; left: 423px; }
+        .frame .element-f { position: absolute; top: 862px; left: 921px; }
+        .frame .element-3 { position: absolute; top: 862px; left: 67px; }
+        .frame .KIMSUYEON-3 { position: absolute; top: 862px; left: 1284px; }
+        .frame .FILM-2 { position: absolute; top: 862px; left: 1791px; }
+        
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    
+    .frame .section3 {
+        position: relative; 
+        top: auto;
+        left: 0; 
+        width: 100%;
+        height: auto;
+        overflow-x: hidden; 
+        transform: none !important; 
+        margin-top: 30px; 
+    }
+    
+    .frame .italy-background {
+        position: relative;
+        width: 100%;
+        height: auto; 
+        padding: 5vw 0;
+    }
+
+    .frame .italy-1, .frame .italy-2, .frame .italy-3 {
+        position: relative;
+        top: auto;
+        left: calc(50% - 45vw); 
+        width: 90%; 
+        height: auto;
+        margin: 5vw auto; 
+        display: block;
+        transform: none;
+    }
+    
+    .frame .KIMSUYEON, .frame .element, .frame .element-2, .frame .KIMSUYEON-m, .frame .FILM,
+    .frame .KIMSUYEON-2, .frame .element-f, .frame .element-3, .frame .KIMSUYEON-3, .frame .FILM-2 {
+        display: none !important; 
+    }
+}
+/*/////////section3////////////*/
+
+
+/* -------------------------------------------------------------------------- */
+/* Section 4 */
+/* -------------------------------------------------------------------------- */
+.section4 {
+    position: relative;
+    top: auto; 
+    left: 0%;
+    width: 100%; 
+    height: 56.25vw; 
+    overflow: hidden;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+
+.main-background {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute; 
+}
+
+.dark-panel-1 {
+    width: 23.75vw;
+    height: 8000px;
+    left: 66.15vw;
+    top: -58px;
+    position: absolute;
+    background: #0D0F0C;
+}
+.dark-panel-2 {
+    width: 23.75vw;
+    height: 7150px;
+    left: 39.11vw;
+    top: -4050px;
+    position: absolute;
+    background: #0A0B09;
+}
+
+.title {
+    left: 4.32vw; top: 24.5vw; 
+    position: absolute; 
+    color: #D40F0F; 
+    font-size: 6.67vw;
+    font-family: "Gotham"; 
+    font-weight: 700; 
+    word-wrap: break-word; 
+    line-height: 100%;
+}
+
+.description {
+    width: 25.94vw; 
+    left: 4.48vw; top: 40vw; 
+    position: absolute; 
+    text-align: justify; 
+    color: #1B1B1B; 
+    font-size: 1.61vw; 
+    font-family: "Inter"; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    z-index: 10;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+.image-box-386x489 {
+    width: 20.10vw; 
+    height: 25.47vw; 
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.camera-text {
+    width: 3.02vw; 
+    height: 0.94vw; 
+    position: absolute;
+    color: #8E8C8F;
+    font-size: 0.625vw; 
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.camera-text-gotham {
+    font-family: Gotham, sans-serif;
+}
+
+.cam-1-L { left: 66.56vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-2-L { left: 66.56vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-3-L { left: 66.56vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-4-L { left: 66.56vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-5-R { left: 89.64vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-6-R { left: 89.64vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-7-R { left: 89.64vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-8-R { left: 89.64vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-10-L { left: 39.64vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-11-L { left: 39.64vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-12-L { left: 39.64vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-13-L { left: 39.64vw; transform: rotate(-90deg); transform-origin: top left; }
+.cam-14-R { left: 62.50vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-15-R { left: 62.50vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-16-R { left: 62.50vw; transform: rotate(90deg); transform-origin: top left; }
+.cam-17-R { left: 62.50vw; transform: rotate(90deg); transform-origin: top left; }
+
+
+@keyframes scroll-up {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3516px); } 
+}
+@keyframes scroll-down {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(3516px); }
+}
+
+.film1, .film2 {
+    position: absolute; 
+    width: 100%; 
+    animation-duration: 60s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.film1 {
+    top: 0; 
+    left: 0;
+    animation-name: scroll-up; 
+}
+.film2 {
+    top: 0;
+    left: 0;
+    animation-name: scroll-down;
+}
+
+#desc-alt {
+    z-index: 9;
+}
+.fade-out1 {
+    opacity: 0 !important;
+    z-index: 9 !important; 
+}
+.fade-in1 {
+    opacity: 1 !important;
+    z-index: 10 !important; 
+}
+
+.title {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#title-florence {
+    z-index: 9; 
+}
+#title-venice {
+    z-index: 10;
+}
+#title-roma { z-index: 8; }
+#desc-roma-main { z-index: 7; }
+#desc-roma-alt { z-index: 6; }
+
+
+.interact-fade-out1 {
+    opacity: 0 !important;
+    transform: translateX(10px) !important;
+}
+.interact-fade-in1 {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+@keyframes scroll-up-fast {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-3516px); } 
+}
+@keyframes scroll-down-fast {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(3516px); }
+}
+@keyframes scroll-down-fast-reverse {
+    0% { transform: translateY(-3516px); }
+    100% { transform: translateY(0); } 
+}
+@keyframes scroll-up-fast-reverse {
+    0% { transform: translateY(3516px); }
+    100% { transform: translateY(0); }
+}
+
+.film-fast-up {
+    animation-name: scroll-up-fast !important;
+    animation-duration: 1.5s !important; 
+}
+.film-fast-down {
+    animation-name: scroll-down-fast !important;
+    animation-duration: 1.5s !important; 
+}
+.film1.film-fast-up {
+    animation: scroll-up-fast 1.5s cubic-bezier(0.8, 0.05, 0.35, 1) forwards; 
+}
+.film2.film-fast-down {
+    animation: scroll-down-fast 1.5s cubic-bezier(0.8, 0.05, 0.35, 1) forwards; 
+}
+.film1.film-fast-down { 
+    animation: scroll-down-fast-reverse 1.5s cubic-bezier(0.8, 0.05, 0.35, 1) forwards;
+}
+.film2.film-fast-up { 
+    animation: scroll-up-fast-reverse 1.5s cubic-bezier(0.8, 0.05, 0.35, 1) forwards;
+}
+
+.roma-image, .hongkong-image, .japan-image { 
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 4  */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .section4 > div:first-child { 
+        width: 100vw !important; 
+        height: 100px !important; 
+        position: relative; 
+    }
+
+    .section4 > div:nth-child(2) {
+        display: none !important; 
+        
+    }
+
+    .frame .title {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        
+        width: 90%; 
+        margin: 20px auto 10px; 
+        text-align: center;
+        font-size: 8vw;
+        line-height: 1.2;
+        
+        opacity: 1 !important; 
+        z-index: 1; 
+    }
+
+    .frame .description {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 90%;
+        margin: 10px auto 30px; 
+        text-align: center;
+        font-size: 4vw; 
+        line-height: 1.5;
+        opacity: 1 !important; 
+        z-index: 1; 
+    }
+
+    /* -------------------------------------------------------------------------- */
+    
+    #desc-alt,
+    #title-roma, #title-florence, #title-venice, 
+    #title-hongkong, #title-tokyo, #title-osaka, 
+    #title-kyoto, #title-nara, 
+    #desc-roma-main, #desc-florence-alt, #desc-venice-alt,
+    #desc-hongkong-main, #desc-hongkong-alt, 
+    #desc-japan-main, #desc-japan-alt1, #desc-japan-alt2, #desc-japan-alt3
+    {
+        display: none !important;
+    }
+    
+    #main-title, #desc-main {
+        display: block !important;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .section4 {
+        position: relative;
+        /* 불필요한 top 값 제거 */
+        top: auto; 
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        display: flex; 
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .title, .description {
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 8vw; 
+        margin-top: 40px;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .dark-panel-1, .dark-panel-2 {
+        display: none; 
+    }
+
+    .film1, .film2 {
+        display: none; 
+    }
+
+    .image-box-386x489 {
+        position: relative;
+        width: 90%; 
+        height: auto;
+        margin: 20px auto; 
+        display: block; 
+        opacity: 1 !important; 
+    }
+
+    .camera-text {
+        display: none;
+    }
+
+    .interact-fade-out1, .interact-fade-in1 {
+        transform: none !important;
+    }
+}
+
+/*/////////section4////////////*/
+
+/* -------------------------------------------------------------------------- */
+/* Section 5 */
+/* -------------------------------------------------------------------------- */
+.section5 {
+    position: relative; 
+    top: auto; 
+    left: 0;
+    width: 100%; 
+    
+  
+    min-height: 90vw; 
+    height: auto;
+    
+    margin-top: 200px; 
+    margin-bottom: 100px; 
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 5 내부 요소 */
+/* -------------------------------------------------------------------------- */
+
+.frame .hongkong-p {
+    position: absolute;
+    top: 33.85vw; 
+    left: 69.79vw;
+    width: 25vw;
+    font-family: "Gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d40f0f;
+    font-size: 0.94vw;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: justify;
+}
+
+.hongkong-p .word-mask,
+.text-wrapper-15 .word-mask,
+.VillaBorghese-2 .word-mask {
+    display: inline-block;
+    overflow: hidden; 
+    line-height: inherit;
+    vertical-align: top;
+}
+
+.hongkong-p .word,
+.text-wrapper-15 .word,
+.VillaBorghese-2 .word {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hongkong-p.animate-in .word,
+.text-wrapper-15.animate-in .word,
+.VillaBorghese-2.animate-in .word {
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transition: opacity 1s ease-in-out;
+}
+
+.frame .hongkong2 {
+    position: absolute;
+    top: 86.72vw; 
+    left: 75.10vw;
+    width: 13.33vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.19vw;
+    letter-spacing: 0.13vw;
+    line-height: normal;
+    color: #b91616;
+}
+
+.frame .hongkong1 {
+    position: absolute;
+    top: 77.97vw; 
+    left: 75.05vw;
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.67vw;
+    letter-spacing: 0;
+    line-height: normal;
+    color: #f51313;
+}
+
+.frame .hongkong1, 
+.frame .hongkong2 {
+    text-shadow: 
+        0 0 5px #ff0000,
+        0 0 15px #c70000d5,
+        0 0 25px #ff7c7ca8;
+    opacity: 0.1; 
+    animation: neon-cycle 3.2s ease-out infinite;
+}
+
+.frame .hongkong1 { animation-delay: 0.2s; }
+.frame .hongkong2 { animation-delay: 0.8s; }
+
+@keyframes neon-cycle {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    4.62% {
+        opacity: 0.6;
+        text-shadow: 0 0 5px #c95203;
+    }
+    5.77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    8.08% {
+        opacity: 0.6;
+        text-shadow: 0 0 5px #d45500;
+    }
+    9.23% {
+        opacity: 0.1;
+        text-shadow: none;
+    }
+    13.85% {
+        opacity: 0.8;
+        text-shadow: 0 0 8px #ff6600, 0 0 15px #ff0000be;
+    }
+    16.15% {
+        opacity: 0.7;
+        text-shadow: 0 0 5px #ff7300, 0 0 10px #ff0000bb;
+    }
+    
+    23.08%, 99.99% { 
+        opacity: 1;
+        text-shadow: 
+            0 0 5px #ffcebf, 
+            0 0 10px #b43900, 
+            0 0 18px #ff593c;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.frame .p-7 {
+    position: absolute;
+    top: 5.47vw; 
+    left: 41.46vw;
+    width: 17.08vw;
+    height: 25.83vw;
+}
+
+.frame .k-12 {
+    position: absolute;
+    top: 5.47vw; 
+    left: 59.58vw;
+    width: 17.08vw;
+    height: 19.32vw;
+    aspect-ratio: 0.88;
+}
+
+.frame .k-13 {
+    position: absolute;
+    top: 5.47vw; 
+    left: 5.21vw;
+    width: 35.21vw;
+    height: 41.30vw;
+    aspect-ratio: 0.85;
+}
+
+.frame .k-3 {
+    position: absolute;
+    top: 49.17vw;
+    left: 5.21vw;
+    width: 89.58vw;
+    height: 33.75vw;
+    aspect-ratio: 2.65;
+}
+
+.frame .section5 .k-13,
+.frame .section5 .p-7,
+.frame .section5 .k-12,
+.frame .section5 .k-3 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.frame .section5 .k-13.fade-in,
+.frame .section5 .p-7.fade-in,
+.frame .section5 .k-12.fade-in,
+.frame .section5 .k-3.fade-in {
+    opacity: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .section5 {
+        position: relative;
+        min-height: auto; 
+        top: auto; 
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        margin-top: 30px; 
+        overflow: hidden;
+    }
+
+    .frame .p-7,
+    .frame .k-12,
+    .frame .k-13,
+    .frame .k-3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90% !important; 
+        height: auto !important; 
+        margin: 20px auto;
+        display: block;
+        aspect-ratio: auto !important; 
+    }
+    .frame .k-3 {
+        width: 95% !important;
+    }
+    
+    .frame .hongkong-p {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 20px auto 10px;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .frame .hongkong1, 
+    .frame .hongkong2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .frame .hongkong1 {
+        font-size: 10vw;
+    }
+
+    .frame .hongkong2 {
+        font-size: 4vw;
+        margin-bottom: 30px;
+    }
+}
+/*////////////////// section5 ////////////////////*/
+
+/* -------------------------------------------------------------------------- */
+/* 필름 라인 */
+/* -------------------------------------------------------------------------- */
+.frame .KIMSUYEON,
+.frame .element,
+.frame .element-2,
+.frame .KIMSUYEON-m,
+.frame .FILM,
+.frame .KIMSUYEON-2,
+.frame .element-f,
+.frame .element-3,
+.frame .KIMSUYEON-3,
+.frame .FILM-2 {
+    color: #838383;
+    font-family: "Gothic A1";
+    font-size: 1.04vw; 
+    font-weight: 400;
+    line-height: normal;
+}
+
+.frame .PARIS-FRANCE {
+    position: absolute;
+    top: 268.65vw; 
+    left: 5.21vw; 
+    font-family: "Gotham-Bold", Helvetica;
+    font-weight: 700;
+    color: #d40f0f;
+    font-size: 6.67vw; 
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .frame .KIMSUYEON, .frame .element, .frame .element-2, .frame .KIMSUYEON-m, .frame .FILM,
+    .frame .KIMSUYEON-2, .frame .element-f, .frame .element-3, .frame .KIMSUYEON-3, .frame .FILM-2 {
+        display: none; 
+    }
+
+    .frame .PARIS-FRANCE {
+        position: relative;
+        top: 50px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 10vw;
+        margin-bottom: 20px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 6  */
+/* -------------------------------------------------------------------------- */
+.section6 {
+    position: relative;
+    top: auto;
+    width: 100%;
+    min-height: 60vw; 
+    margin-top: 100px; 
+    margin-bottom: 50px; 
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 6 내부 요소 */
+/* -------------------------------------------------------------------------- */
+
+.frame .PARIS {
+    position: absolute;
+    top: 9.43vw; 
+    left: 5.21vw; 
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #d40f0f;
+    font-size: 1.875vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .p-2 {
+    position: absolute;
+    top: 13.59vw;
+    left: 5.21vw; 
+    width: 29.32vw; 
+    height: 37.71vw; 
+}
+
+.frame .k-14 {
+    position: absolute;
+    top: 13.59vw; 
+    left: 35.63vw; 
+    width: 28.70vw; 
+    height: 37.71vw; 
+    aspect-ratio: 0.76;
+}
+
+.frame .k-4 {
+    position: absolute;
+    top: 13.59vw; 
+    left: 66.10vw; 
+    width: 28.70vw; 
+    height: 37.71vw; 
+}
+
+.frame .text-wrapper-15 {
+    top: 53.70vw; 
+    left: 68.85vw; 
+    text-align: justify;
+    position: absolute;
+    width: 26.15vw; 
+    font-family: "Gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d40f0f;
+    font-size: 1.04vw; 
+    letter-spacing: 0;
+    line-height: normal;
+}
+.text-wrapper-15 .word-mask,
+.text-wrapper-15 .word {
+    display: inline-block;
+    overflow: hidden; 
+    line-height: inherit;
+    vertical-align: top;
+}
+.text-wrapper-15 .word {
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.text-wrapper-15.animate-in .word {
+    transform: translateY(0);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px)*/
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .section6 {
+        position: relative;
+        min-height: auto; 
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-top: 0;
+    }
+    
+    .frame .PARIS {
+        position: relative;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
+
+    .frame .p-2,
+    .frame .k-14,
+    .frame .k-4 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%; 
+        height: auto;
+        margin: 10px auto;
+        display: block;
+        aspect-ratio: auto;
+    }
+
+    .frame .text-wrapper-15 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 30px auto 50px;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+/*--------------section9-------------*/
+
+
+/* -------------------------------------------------------------------------- */
+/* Section 9 */
+/* -------------------------------------------------------------------------- */
+.section9 {
+    position: relative;
+    min-height: 95vw; 
+    margin-top: 300px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Section 9 내부 요소 */
+/* -------------------------------------------------------------------------- */
+
+.frame .v-1 {
+    position: absolute;
+    top: 5.78vw; 
+    left: 0px;
+    width: 100vw;
+    height: 38.02vw;
+    aspect-ratio: 1.7;
+    transform: scale(1);
+    transition: transform 3.5s ease-in-out;
+    z-index: 1;
+}
+
+.frame .v-1.active {
+    transform: scale(1.1);
+}
+
+.frame .VillaBorghese {
+    position: absolute;
+    top: 11.51vw; 
+    left: 5.42vw; 
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #d40f0f;
+    font-size: 1.77vw;
+    letter-spacing: 0;
+    line-height: normal;
+    z-index: 10;
+}
+
+.frame .VillaBorghese-2 {
+    top: 14.95vw; 
+    left: 5.42vw; 
+    position: absolute;
+    width: 24.48vw;
+    font-family: gotham, sans-serif;
+    font-weight: 400;
+    color: #d40f0f;
+    font-size: 1.04vw;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: justify;
+    z-index: 10;
+}
+
+.frame .v-background {
+    background-color: #1b1b1b;
+    width: 100vw;
+    height: 44.27vw;
+    top: 2.92vw; 
+    position: absolute; 
+    left: 0;
+    z-index: 0;
+}
+
+.frame .v-background1 {
+    background-color: #1b1b1b;
+    width: 100vw;
+    height: 2.86vw;
+    top: 3.18vw; 
+    position: absolute; 
+    left: 0;
+    z-index: 5;
+}
+
+.frame .v-background2 {
+    background-color: #1b1b1b;
+    width: 100vw;
+    height: 2.08vw;
+    top: 44.58vw; 
+    position: absolute; 
+    left: 0;
+    z-index: 5;
+}
+
+.frame .KIMSUYEON-8, .frame .element-8, .frame .element-9, .frame .KIMSUYEON-9, .frame .FILM-5 {
+    color: #838383;
+    font-family: "Gothic A1";
+    font-size: 1.04vw;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 3.44vw; 
+    z-index: 10;
+}
+
+.frame .KIMSUYEON-8 { left: 23.80vw; }
+.frame .element-8 { left: 49.74vw; }
+.frame .element-9 { left: 91.93vw; }
+.frame .KIMSUYEON-9 { left: 66.10vw; }
+.frame .FILM-5 { left: 0.94vw; }
+
+
+.frame .KIMSUYEON-10, .frame .element-10, .frame .element-11, .frame .KIMSUYEON-11, .frame .FILM-6 {
+    color: #838383;
+    font-family: "Gothic A1";
+    font-size: 1.04vw;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 44.84vw; 
+    z-index: 10;
+}
+.frame .KIMSUYEON-10 { left: 19.69vw; }
+.frame .element-10 { left: 45.625vw; }
+.frame .element-11 { left: 1.15vw; }
+.frame .KIMSUYEON-11 { left: 64.53vw; }
+.frame .FILM-6 { left: 90.94vw; }
+
+.VillaBorghese, .VillaBorghese-2, .film-line5 div {
+    z-index: 10;
+}
+.frame .v-background1, .v-background2, .v-line {
+    z-index: 5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .frame .v-background,
+    .frame .v-background1,
+    .frame .v-background2 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: auto;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .frame .KIMSUYEON-8, .frame .element-8, .frame .element-9, .frame .KIMSUYEON-9, .frame .FILM-5,
+    .frame .KIMSUYEON-10, .frame .element-10, .frame .element-11, .frame .KIMSUYEON-11, .frame .FILM-6 {
+        display: none;
+    }
+
+    .frame .v-1 {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(1) !important; 
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .frame .v-line {
+        display: none;
+    }
+    
+    .frame .VillaBorghese,
+    .frame .VillaBorghese-2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .frame .VillaBorghese {
+        font-size: 6vw;
+        margin-top: 30px;
+    }
+    
+    .frame .VillaBorghese-2 {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 10  */
+/* -------------------------------------------------------------------------- */
+.section10 {
+    position: relative;
+    min-height: 140vw; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 10 내부 요소*/
+/* -------------------------------------------------------------------------- */
+
+.frame .JAPAN-title {
+    position: absolute;
+    top: 9.48vw; 
+    left: 4.95vw;
+    width: 9.74vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #d40f0f;
+    font-size: 1.875vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.section10 img {
+    filter: blur(0px);
+    transition: filter 0.7s ease-in-out; 
+}
+
+.section10 img:hover {
+    filter: blur(5px); 
+    transition: filter 2.5s ease-in-out; 
+}
+
+.frame .p-5 {
+    position: absolute;
+    top: 65.99vw; 
+    left: 23.07vw;
+    width: 17.08vw;
+    height: 25.68vw;
+    object-fit: cover;
+}
+
+.frame .p-3 {
+    position: absolute;
+    top: 16.04vw; 
+    left: 59.32vw;
+    width: 17.08vw;
+    height: 27.14vw;
+    object-fit: cover;
+}
+
+.frame .p-4 {
+    position: absolute;
+    top: 16.04vw; 
+    left: 77.45vw;
+    width: 17.08vw;
+    height: 17.19vw;
+    object-fit: cover;
+}
+
+.frame .k-6 {
+    position: absolute;
+    top: 16.04vw; 
+    left: 4.95vw;
+    width: 35.21vw;
+    height: 37.29vw;
+    aspect-ratio: 0.94;
+}
+
+.frame .k-7 {
+    position: absolute;
+    top: 65.99vw;
+    left: 41.20vw;
+    width: 17.08vw;
+    height: 17.08vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.frame .k-8 {
+    position: absolute;
+    top: 65.99vw; 
+    left: 77.45vw;
+    width: 17.08vw;
+    height: 17.08vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.frame .k-9 {
+    top: 112.08vw; 
+    left: 59.32vw;
+    width: 17.08vw;
+    height: 17.08vw;
+    position: absolute;
+    aspect-ratio: 1;
+}
+
+.frame .r-0 {
+    top: 112.08vw;
+    left: 77.45vw;
+    width: 17.08vw;
+    height: 17.08vw;
+    position: absolute;
+    aspect-ratio: 1;
+}
+
+.frame .p-6 {
+    position: absolute;
+    top: 112.08vw; 
+    left: 4.95vw;
+    width: 17.97vw;
+    height: 17.97vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.frame .section10 .k-6,
+.frame .section10 .p-3,
+.frame .section10 .p-4,
+.frame .section10 .p-5,
+.frame .section10 .k-7,
+.frame .section10 .k-8,
+.frame .section10 .r-0,
+.frame .section10 .k-9,
+.frame .section10 .p-6 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.frame .section10 .k-6.fade-in,
+.frame .section10 .p-3.fade-in,
+.frame .section10 .p-4.fade-in,
+.frame .section10 .p-5.fade-in,
+.frame .section10 .k-7.fade-in,
+.frame .section10 .k-8.fade-in,
+.frame .section10 .r-0.fade-in,
+.frame .section10 .k-9.fade-in,
+.frame .section10 .p-6.fade-in {
+    opacity: 1;
+}
+
+.frame .JAPAN-6, .frame .JAPAN-3, .frame .JAPAN-1, .frame .JAPAN-2, .frame .JAPAN-5, .frame .JAPAN-4, .frame .JAPAN-7, .frame .JAPAN-9, .frame .JAPAN-8, .frame .JAPAN28, .frame .JAPAN29 {
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #d40f0f;
+    font-size: 0.73vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+.frame .JAPAN28, .frame .JAPAN29 { color: #838383; }
+
+.frame .JAPAN-6 { top: 84.12vw; left: 77.45vw; } 
+.frame .JAPAN-3 { top: 34.27vw; left: 77.45vw; padding: 0%; } 
+.frame .JAPAN-1 { top: 54.38vw; left: 4.95vw; width: 17.86vw; margin: 0%; } 
+.frame .JAPAN-2 { top: 44.22vw; left: 59.32vw; width: 17.08vw; margin: 0%; } 
+.frame .JAPAN-5 { top: 84.12vw; left: 41.20vw; } 
+.frame .JAPAN-4 { top: 92.71vw; left: 23.07vw; width: 17.08vw; margin: 0%; }
+.frame .JAPAN-7 { top: 131.1vw; left: 4.95vw; } 
+.frame .JAPAN-9 { top: 130.21vw; left: 77.45vw; } 
+.frame .JAPAN-8 { top: 130.21vw; left: 59.32vw; } 
+.frame .JAPAN28 { top: 119.11vw; left: 37.5vw; } 
+.frame .JAPAN29 { top: 74.06vw; left: 64.27vw; } 
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .section10 {
+        position: relative;
+        min-height: auto; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .frame .JAPAN-title {
+        position: relative;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 30px;
+    }
+
+    .frame .p-5, .frame .p-3, .frame .p-4, .frame .k-6, .frame .k-7, .frame .k-8, .frame .k-9, .frame .r-0, .frame .p-6 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%; 
+        height: auto;
+        margin: 15px auto;
+        display: block;
+        aspect-ratio: auto;
+        opacity: 1 !important;
+    }
+    
+    .frame .JAPAN-6, .frame .JAPAN-3, .frame .JAPAN-1, .frame .JAPAN-2, .frame .JAPAN-5, .frame .JAPAN-4, .frame .JAPAN-7, .frame .JAPAN-9, .frame .JAPAN-8, .frame .JAPAN28, .frame .JAPAN29 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 5px auto 25px;
+        text-align: left;
+        font-size: 0.8rem;
+        display: block;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* Section 11*/
+/* -------------------------------------------------------------------------- */
+.section11 {
+    position: relative;
+    min-height: 50vw; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 11 내부 요소*/
+/* -------------------------------------------------------------------------- */
+
+.frame .ROMA-title {
+    position: absolute;
+    top: 5.31vw; 
+    left: 5.21vw;
+    width: 9.74vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #d40f0f;
+    font-size: 1.875vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .ROMA-text {
+    top: 8.91vw; 
+    left: 5.21vw;
+    color: #1b1b1b;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.73vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .ROMA-text2 {
+    top: 8.91vw; 
+    left: 78.65vw;
+    color: #1b1b1b;
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.73vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .ROMA-text3 {
+    position: absolute;
+    top: 37.86vw; 
+    left: 57.03vw;
+    width: 40vw;
+    font-family: "Gotham-Bold", Helvetica;
+    font-weight: 700;
+    color: #cb1011;
+    font-size: 6.77vw;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 이미지 호버 레이어 */
+/* -------------------------------------------------------------------------- */
+.frame .k-10-1,
+.frame .r-2-1,
+.frame .k-11-1,
+.frame .r-3-1 {
+    width: 21.41vw;
+    position: absolute;
+    z-index: 10;
+    object-fit: cover;
+    
+    top: 12.5vw; 
+    height: 21.41vw;
+    opacity: 0;
+    
+    transition: 
+        top 0.4s ease-in-out, 
+        height 0.4s ease-in-out, 
+        opacity 0.4s ease-in-out;
+}
+
+.frame .k-10-1 { left: 4.95vw; }
+.frame .r-2-1 { left: 27.71vw; }
+.frame .k-11-1 { left: 50.36vw; }
+.frame .r-3-1 { left: 73.13vw; }
+
+.frame .k-10, .frame .r-2, .frame .k-11, .frame .r-3 {
+    top: 12.5vw; 
+    width: 21.41vw;
+    height: 21.41vw;
+    position: absolute;
+    object-fit: cover;
+    z-index: 9;
+}
+.frame .k-10 { left: 4.95vw; }
+.frame .r-2 { left: 27.71vw; }
+.frame .k-11 { left: 50.36vw; }
+.frame .r-3 { left: 73.13vw; }
+
+.frame .k-10:hover ~ .k-10-1,
+.frame .k-10-1:hover {
+    top: 8.91vw; 
+    height: 28.49vw;
+    opacity: 1;
+}
+
+.frame .r-2:hover ~ .r-2-1,
+.frame .r-2-1:hover {
+    top: 8.91vw; 
+    height: 28.49vw;
+    opacity: 1;
+}
+
+.frame .k-11:hover ~ .k-11-1,
+.frame .k-11-1:hover {
+    top: 8.91vw; 
+    height: 28.49vw;
+    opacity: 1;
+}
+
+.frame .r-3:hover ~ .r-3-1,
+.frame .r-3-1:hover {
+    top: 8.91vw; 
+    height: 28.49vw;
+    opacity: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .section11 {
+        position: relative;
+        min-height: auto; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .frame .ROMA-title {
+        position: relative;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
+
+    .frame .ROMA-text,
+    .frame .ROMA-text2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 5px auto;
+        text-align: left;
+        font-size: 0.8rem;
+        display: block;
+    }
+
+    .frame .ROMA-text3 {
+        position: relative;
+        top: 30px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        font-size: 12vw;
+        margin: 30px auto;
+        line-height: 1.2;
+    }
+    
+    .frame .k-10, .frame .r-2, .frame .k-11, .frame .r-3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+        aspect-ratio: 1;
+    }
+
+    .frame .k-10-1,
+    .frame .r-2-1,
+    .frame .k-11-1,
+    .frame .r-3-1 {
+        display: none !important;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Section 7 */
+/* -------------------------------------------------------------------------- */
+.section7 {
+    position: relative;
+
+    min-height: 270vw; 
+    margin-top: 600px;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    /* overflow: hidden; */
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Section 7 내부 요소 */
+/* -------------------------------------------------------------------------- */
+
+.frame .move img {
+    transition: transform 1.5s ease-in-out, width 1.5s ease-in-out, height 1.5s ease-in-out;
+    object-fit: cover;
+    position: absolute; 
+}
+
+.frame .museum13 {
+    top: 173.91vw; 
+    left: 69.79vw;
+    position: absolute;
+    width: 17.5vw;
+    height: 23.70vw;
+    aspect-ratio: 0.74;
+    object-fit: cover;
+}
+
+.frame .museum17 {
+    top: 223.33vw;
+    left: 47.0vw;
+    width: 17.5vw;
+    height: 22.29vw;
+    position: absolute;
+    aspect-ratio: 0.79;
+}
+
+.frame .museum15 {
+    top: 203.33vw; 
+    left: 65.52vw;
+    width: 17.45vw;
+    height: 28.07vw;
+    position: absolute;
+    aspect-ratio: 0.62;
+    object-fit: cover;
+}
+
+.frame .museum18 {
+    top: 223.33vw; 
+    left: 28.39vw;
+    width: 17.55vw;
+    height: 25.78vw;
+    aspect-ratio: 0.68;
+    position: absolute;
+    object-fit: cover;
+}
+
+.frame .museum14 {
+    position: absolute;
+    top: 203.33vw; 
+    left: 51.67vw;
+    width: 12.81vw;
+    height: 18.91vw;
+    aspect-ratio: 0.68;
+}
+
+.frame .museum12 {
+    top: 173.91vw; 
+    left: 51.67vw;
+    width: 17.08vw;
+    height: 28.49vw;
+    position: absolute;
+    object-fit: cover;
+}
+
+.frame .museum16-1 {
+    position: absolute;
+    top: 220.57vw; 
+    left: 84.01vw;
+    width: 7.14vw;
+    height: 5.68vw;
+}
+
+.frame .museum10 {
+    position: absolute;
+    top: 167.34vw; 
+    left: 42.34vw;
+    width: 12.81vw;
+    height: 5.68vw;
+    aspect-ratio: 0.77;
+    object-fit: cover;
+}
+
+.frame .museum11 {
+    position: absolute;
+    top: 173.91vw; 
+    left: 13.33vw;
+    width: 37.29vw;
+    height: 48.44vw;
+    aspect-ratio: 0.77;
+    object-fit: cover;
+}
+
+.frame .museum19 {
+    position: absolute;
+    top: 234.32vw; 
+    left: 84.01vw;
+    width: 7.14vw;
+    height: 5.68vw;
+}
+
+.frame .museum20 {
+    position: absolute;
+    top: 250.16vw; 
+    left: 26.30vw;
+    width: 10.89vw;
+    height: 6.98vw;
+}
+
+.frame .lens-foggy {
+    position: absolute;
+    top: 61vw; 
+    left: 4.69vw;
+    width: 90.63vw;
+    font-family: "gotham", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #1B1B1B;
+    font-size: 5.0vw;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 7.5vw;
+}
+
+.frame .museum3 {
+    top: 20.89vw; 
+    left: 75.21vw;
+    width: 15.0vw;
+    height: 26.30vw;
+    position: absolute;
+    object-fit: cover;
+}
+
+.frame .museum9 {
+    top: 130.83vw; 
+    left: 70.47vw;
+    width: 9.43vw;
+    height: 15.21vw;
+    position: absolute;
+    aspect-ratio: 0.62;
+    object-fit: cover;
+}
+
+.frame .museum2 {
+    top: 19.01vw; 
+    left: 31.67vw;
+    width: 13.23vw;
+    height: 16.82vw;
+    position: absolute;
+    aspect-ratio: 0.79;
+}
+
+.frame .museum7 {
+    top: 85.36vw; 
+    left: 76.93vw;
+    width: 8.125vw;
+    height: 11.93vw;
+    aspect-ratio: 0.68;
+    position: absolute;
+    object-fit: cover;
+}
+
+.frame .museum6 {
+    top: 59.64vw; 
+    left: 56.56vw;
+    position: absolute;
+    width: 17.5vw;
+    height: 23.70vw;
+    aspect-ratio: 0.74;
+    object-fit: cover;
+}
+
+.frame .museum8 {
+    position: absolute;
+    top: 123.125vw; 
+    left: 17.97vw;
+    width: 21.77vw;
+    height: 28.23vw;
+    aspect-ratio: 0.77;
+    object-fit: cover;
+}
+
+.frame .museum4 {
+    position: absolute;
+    top: 36.30vw; 
+    left: 15.36vw;
+    width: 9.11vw;
+    height: 13.49vw;
+    aspect-ratio: 0.68;
+}
+
+.frame .museum5 {
+    position: absolute;
+    top: 66.77vw; 
+    left: 14.06vw;
+    width: 16.61vw;
+    height: 7.34vw;
+    aspect-ratio: 2.26;
+}
+
+.frame .museum1 {
+    position: absolute;
+    top: 5.73vw; 
+    left: 66.82vw;
+    width: 13.44vw;
+    height: 8.65vw;
+}
+
+.frame .museum16 {
+    position: absolute;
+    top: 85.98vw; 
+    left: 35.05vw;
+    width: 7.14vw;
+    height: 5.68vw;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px)*/
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .section7 {
+        position: relative;
+        min-height: auto; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    
+    .frame .lens-foggy {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 0 auto 30px;
+        font-size: 8vw;
+        line-height: 10vw;
+        text-align: center;
+    }
+
+    .frame .museum1, .frame .museum2, .frame .museum3, .frame .museum4, .frame .museum5, .frame .museum6, .frame .museum7, .frame .museum8, .frame .museum9, .frame .museum10, .frame .museum11, .frame .museum12, .frame .museum13, .frame .museum14, .frame .museum15, .frame .museum17, .frame .museum18, .frame .museum19, .frame .museum20, .frame .museum16, .frame .museum16-1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+        transition: none;
+    }
+
+    .frame .museum11 { width: 95%; }
+    .frame .museum5, .frame .museum10, .frame .museum16, .frame .museum16-1, .frame .museum19, .frame .museum20 {
+        width: 30%;
+        aspect-ratio: auto;
+    }
+}
+/* section 7 끝*/
+
+
+
+
+.frame .p-2,
+.frame .p-3,
+.frame .p-4,
+.frame .p-5,
+.frame .p-6,
+.frame .p-7,
+.frame .p-8,
+.frame .p-9,
+.frame .p-10,
+.frame .p-11 {
+    padding: 0 !important;
+}
+
+
+/*secion0*/
+
+.frame .section0{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    
+    font-family: 'gotham', sans-serif; 
+    background-color: #F6F6F6; 
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+
+    cursor: none;
+
+}
+
+        #custom-cursor {
+            width: 32px; 
+            height: 32px;
+            background-image: url('/img/ImageToStl.com_cursor.cur');
+            background-size: contain; 
+            background-repeat: no-repeat;
+            position: fixed;
+            pointer-events: none; 
+            z-index: 9999;
+            transition: transform 0.3s ease-out;
+        }
+        
+        .noise-overlay-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh; 
+            pointer-events: none; 
+            z-index: 9999; 
+            opacity: 0; 
+            transition: opacity 0.5s ease; 
+        }
+
+
+        body.film-active .kodak img {
+    filter: grayscale(100%) contrast(150%) brightness(95%);
+    transition: filter 0.5s ease; 
+}
+
+        .expand {
+            transform: scale(1.5); 
+        }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9000; 
+    background-color: #f6f6f615; 
+    padding: 0 0; 
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1300px; 
+    padding: 2.60vw 0; 
+    margin: 0 auto; 
+}
+
+.header-link.left-link,
+.header-right {
+    color: #000000;
+    font-family: 'gotham', sans-serif;
+    font-size: 0.83vw; 
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+
+
+.header-right {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: #f6f6f6; 
+    }
+    
+    .header-nav {
+        max-width: 100%; 
+        padding: 15px 5%; 
+    }
+    
+    .header-link.left-link,
+    .header-right {
+        font-size: 14px; 
+    }
+}
+
+.main-content {
+    padding-top: 5.21vw; 
+    display: flex; 
+    gap: 16vw; 
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+        padding-top: 30px; 
+        gap: 30px; 
+        width: 100%;
+        align-items: center; 
+    }
+}
+.kodak {
+    position: relative; 
+    perspective: 41.67vw; 
+    perspective-origin: center center;
+    overflow: hidden;
+    height: fit-content;
+    flex-shrink: 1; 
+    max-width: 50%; 
+    width: 50%; 
+}
+
+.kodak img {
+    padding-top: 5.21vw;
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    position: relative;
+    z-index: 20;
+    display: block;
+}
+
+.background-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20.83vw;
+    height: 10.42vw;
+    background-color: #F6F6F6; 
+    z-index: 10; 
+}
+
+.film-roll {
+    width: 100%;
+    height: 33.13vw;
+    transform: translateY(-92%); 
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.film-roll:hover {
+    transform: translateY(-87%);
+}
+
+#myCanvas {
+    width: 14.84vw; 
+    height: 33.13vw; 
+    position: absolute;
+    z-index: 5;
+    left: 3.49vw;
+    bottom: 1.56vw;
+}
+
+.film-box-sides {
+    position: absolute;
+    width: 14.84vw; 
+    height: 33.13vw; 
+    z-index: 15;
+    left: 3.49vw;
+    bottom: 1.56vw;
+    pointer-events: none;
+    transform-style: preserve-3d;
+}
+
+.film-box-side {
+    position: absolute;
+    left: 0.52vw; 
+    bottom: 33.85vw; 
+    width: 33.13vw; 
+    height: auto; 
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left; 
+    color: #A7A7A7; 
+    font-size: 0.52vw; 
+    font-family: Gothic A1; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.film-box-side2 {
+    position: absolute;
+    right: 1.25vw; 
+    top: 32.81vw; 
+    width: 33.13vw; 
+    height: auto; 
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: top right;
+    color: #A7A7A7; 
+    font-size: 0.52vw; 
+    font-family: Gothic A1; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.film-box-middle {
+    position: absolute;
+    bottom: 1.56vw; 
+    left: 11.20vw; 
+    transform: translateX(-50%);
+    width: 10.42vw; 
+    height: auto; 
+    color: #A7A7A7; 
+    font-size: 0.73vw; 
+    font-family: 'Gothic A1'; 
+    font-weight: 500; 
+    text-align: center;
+    line-height: 1.5;
+    z-index: 15;
+    pointer-events: none;
+    transform-style: preserve-3d;
+    perspective: 26.04vw;
+}
+
+.dragging {
+    transition: none !important; 
+    cursor: grabbing;
+}
+
+.film-box-middle .middle-line {
+    display: inline-block;
+    transform-origin: center center; 
+    line-height: 1.5;
+}
+
+.film-box-middle .line-space {
+    display: block;
+    height: 1.5em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px)*/
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .kodak {
+        perspective: 800px;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+
+    .kodak img {
+        padding-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 100%; 
+    height: auto;
+    }
+
+    .background-hidden {
+        display: none;
+    }
+
+    .film-roll {
+        width: 90%;
+        height: auto; 
+        transform: translateY(-90%);
+        margin: 0 auto;
+    }
+
+    .film-roll:hover {
+        transform: translateY(-88%);
+    }
+    #myCanvas,
+    .film-box-sides {
+        position: absolute;
+        width: 35%; 
+        height: 80%; 
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+    
+    .film-box-sides {
+        width: 45%; 
+        height: 60vh;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
+
+    .film-box-side,
+    .film-box-side2 {
+        width: 60vh; 
+        font-size: 0.6rem;
+    }
+    .film-box-side {
+        left: 0;
+        bottom: 60vh; 
+    }
+    .film-box-side2 {
+        right: 0;
+        top: 60vh; 
+    }
+    
+    .film-box-middle {
+        position: absolute;
+        bottom: 40px; 
+        left: 50%; 
+        transform: translateX(-50%);
+        width: 40%; 
+        font-size: 0.7rem;
+        perspective: 300px;
+    }
+}
+
+        .text-content {
+    width: 32.76vw; 
+    margin-top: 12.5vw; 
+}
+
+@media screen and (max-width: 768px) {
+    .text-content {
+        width: 90%; 
+        margin-top: 50px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+        
+
+    @keyframes spin_complex {
+    0% { transform: rotateY(0deg); }
+    10% { transform: rotateY(0deg); }
+    40% { transform: rotateY(180deg); }
+    50% { transform: rotateY(180deg); }
+    90% { transform: rotateY(360deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+#wrap {
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    width: 100%;
+    height: 4.69vw; 
+    perspective: 20.83vw; 
+}
+
+h1 {
+    display: flex;
+    align-items: center; 
+    margin: 0;
+    font-size: 3.33vw; 
+    font-family: 'gotham', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.56vw; 
+    letter-spacing: -1px;
+}
+
+.box {
+    width: 2.60vw; 
+    height: 2.60vw; 
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    animation: spin_complex 10s ease-in-out infinite;
+    display: flex;
+    margin-left: 0.52vw; 
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #F5F5F5;
+    font-size: 6.67vw; 
+    font-weight: bold;
+    color: #000;
+    transform: rotateY(0deg);
+    top: 1.25vw;
+}
+
+.back {
+    background-color: #F5F5F5;
+    font-size: 6.67vw; 
+    font-weight: bold;
+    color: #000;
+    transform: rotateY(180deg);
+    top: 1.25vw;
+}
+
+.box:hover {
+    transform: rotateY(0deg); 
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    #wrap {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center; 
+        perspective: 400px;
+    }
+
+    h1 {
+        font-size: 8vw; 
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .box {
+        width: 30px; 
+        height: 30px; 
+        margin-left: 5px;
+        flex-shrink: 0;
+    }
+
+    .front, .back {
+        font-size: 30px; 
+        top: 0;
+    }
+}
+
+        .hover-trigger {
+            width: auto; 
+            height: auto; 
+            overflow: hidden; 
+            position: relative;
+            cursor: pointer;
+            
+            font-family: 'VT323', monospace;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.0; 
+        }
+        
+        .scrolling-line-wrapper {
+            display: flex; 
+            width: auto; 
+            height: auto; 
+            transform: translateX(0);
+            transition: transform 0.5s ease-out; 
+        }
+
+        .scrolling-text {
+    font-family: 'VT323', monospace;
+    font-size: 1.25vw; 
+    font-weight: 400;
+    line-height: 1.1;
+
+    margin-right: 6.72vw; 
+    flex-shrink: 0; 
+    white-space: nowrap; 
+
+    /* font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit; */
+}
+
+.p3 {
+    color: #CE3E48; 
+    margin-top: 2.60vw; 
+    font-family: 'VT323', monospace;
+    font-size: 1.25vw; 
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 모바일 반응형 디자인 (max-width: 768px) */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .scrolling-text {
+        font-size: 5vw; 
+        margin-right: 20px; 
+    }
+
+    .p3 {
+        font-size: 1rem;
+        margin-top: 20px; 
+    }
+}
+
+        @keyframes scrollLoop {
+            from { transform: translateX(0%); }
+            to { transform: translateX(var(--scroll-dist)); } 
+        }
+
+        .is-scrolling {
+            transition: none !important; 
+            animation: scrollLoop 15s linear infinite; 
+        }
+
+
+
+/* -------------------------------------------------------------------------- */
+/* MONO/Film Mode (흑백 전환) */
+/* -------------------------------------------------------------------------- */
+body.film-active img,
+body.film-active .img,
+body.film-active [class*="k-"],
+body.film-active [class*="p-"], 
+body.film-active [class*="r-"], 
+body.film-active .v-1 {
+  
+    filter: grayscale(100%);
+  
+    transition: filter 0.5s ease;
+}
+
+/**/
+

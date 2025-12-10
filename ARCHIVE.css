@@ -1859,14 +1859,6 @@ body {
     object-fit: cover;
 }
 
-.frame .museum16-1 {
-    position: absolute;
-    top: 220.57vw; 
-    left: 84.01vw;
-    width: 7.14vw;
-    height: 5.68vw;
-}
-
 .frame .museum10 {
     position: absolute;
     top: 167.34vw; 
@@ -1889,7 +1881,7 @@ body {
 
 .frame .museum19 {
     position: absolute;
-    top: 234.32vw; 
+    top: 228vw; 
     left: 84.01vw;
     width: 7.14vw;
     height: 5.68vw;

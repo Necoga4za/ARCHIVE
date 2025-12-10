@@ -926,7 +926,7 @@ const customCursor = document.getElementById('custom-cursor');
 const clickableElements = document.querySelectorAll('.hover-trigger, #monoToggleButton');
 
 
-const clickSound = new Audio('/img/audio/click-sound.mp3');
+const clickSound = new Audio('img/audio/click-sound.mp3');
 clickSound.volume = 0.6;
 
 function playClickSound() {
